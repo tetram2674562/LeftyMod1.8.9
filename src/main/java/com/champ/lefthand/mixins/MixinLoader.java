@@ -1,4 +1,4 @@
-package com.champ.lefthand.mixins;
+/*package com.champ.lefthand.mixins;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
@@ -36,4 +36,4 @@ public class MixinLoader implements IFMLLoadingPlugin {
     public String getAccessTransformerClass() {
         return null;
     }
-}
+}*/

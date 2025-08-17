@@ -1,19 +1,16 @@
 package com.champ.lefthand;
 
-import com.champ.lefthand.mixins.MixinGameSettings;
-import com.champ.lefthand.usage.ToggleScreen;
-import net.minecraft.client.Minecraft;
-import net.minecraft.init.Blocks;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.MinecraftClient;
 
-public class LeftyMod implements ModInitializer{
+public class LeftyMod implements ModInitializer {
+    // Was never used.
+    //public static LeftyMod INSTANCE = new LeftyMod();
 
-    public static LeftyMod INSTANCE = new LeftyMod();
-
-    private static Minecraft mc = Minecraft.getMinecraft();
+    public static MinecraftClient mc = MinecraftClient.getInstance();
 
     @Override
-    public void onInitialize(){
+    public void onInitialize() {
         System.out.println("STARTING MOD-------------------------------------------");
     }
 }
