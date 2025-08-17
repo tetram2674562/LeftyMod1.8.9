@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "lefthand",
+  "id": "leftymod",
   "version": "${version}",
-  "name": "Left hand mod",
+  "name": "leftymod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Champ",
-    "ported by tetram26"
+    "ported to legacy fabric by tetram26"
   ],
   "environment": "client",
   "entrypoints": {

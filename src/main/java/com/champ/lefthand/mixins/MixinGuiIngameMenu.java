@@ -14,15 +14,15 @@ import static com.champ.lefthand.LeftyMod.mc;
 @Mixin(GameMenuScreen.class)
 public class MixinGuiIngameMenu extends Screen {
 
-    @Inject(method = "init", at = @At("RETURN"))
-    private void displayButtons(CallbackInfo ci) {
+    @Inject(method = "init", at = @At(value = "RETURN"))
+    private void init(CallbackInfo ci) {
         buttons.add(new ButtonWidget(600, 5, 5, mc.textRenderer.getStringWidth("LEFT HAND") + 10, textRenderer.fontHeight + 5, "LEFT HAND"));
         // Was there.?
         //System.out.println("INIT GUI");
     }
 
     @Inject(method = "buttonClicked", at = @At(value = "HEAD"), cancellable = true)
-    public void buttonClicked(ButtonWidget button, CallbackInfo ci) {
+    protected void buttonClicked(ButtonWidget button, CallbackInfo ci) {
         if (button.id == 600) {
             // Was there.?
             //System.out.println("INIT TOGGLE SCREEN");
